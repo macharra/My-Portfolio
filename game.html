@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./game.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -13,34 +13,32 @@
         <nav>
             <div class="logo">FOLIO.</div>
             <ul class="nav-items">
-                <li><a class="visited" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="hobbies.html">Hobbies</a></li>
                 <li><a href="sp_animal.html">Sp-animal</a></li>
                 <li><a href="about.html">About</a></div></li>
             </ul>
-          <!--   <div class="links">
+            <div class="links">
                 <a href="#"><i class="fa-solid fa-phone"></i></a>
                 <a href="#"><i class="fa-solid fa-envelope"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
-            </div> -->
+            </div>
         </nav>
+        <div>
+            <div class="head">
+                <h1>Number Guessing Game</h1>
+            </div>
+        
+            <div class="content">
+                <p>I'm thinking of a number between 1 and 100. Can you guess it?</p>
+                <input type="number" id="guessInput">
+                <button id="guessBtn">Guess</button>
+                <p id="result"></p>
+            </div>
+        </div>
 
-        <div class="content">
-            <div class="col col1">
-                <h1 id="h1">Hello, I'm </span class="fname">Rogers</span><span class="lname"> Machara</span></h1>
-            <div class="col col2"></div>
-                <h3>Welcome to my portfolio</h3>
-            <div class="col col3"></div>
-                <p>I'm a student pursuing software engineering at Moringa. Nothing much yet but feel free to reach out if you're interested in collaboration.</p>
-                    <div class="btns">
-                        <button><a href="game.html">Play a game</a></button>
-                        <button><a href="contact.html">Let's Talk</a></button>
-                    </div>
-            <div class="img-box">
-                <img src="images/avi.JPG" alt="roges">
-            </div>
-            </div>
-    </div>     
+    </div> 
+    <script src="game.js"></script>
 </body>
 </html>

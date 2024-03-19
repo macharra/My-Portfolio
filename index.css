@@ -26,74 +26,53 @@ body{
   
 }
 
-
-
 nav{
     width: 100%;
     padding: 10px 0;
-    line-height: 40px;
     display: flex;
-    justify-content: space-around;
-    z-index: 10;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     min-height: 60px;
     background-image: url("images/blackstones.jpg");
     background-size: 100px 100px;
+
 }
 
-.logo{
+nav ul {
     display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li{
+    padding: 10px;
+    text-decoration: none;
+
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 20px;
+    color: rgb(192, 191, 180);
+    transition: .3s ease-in;
+
+}
+
+.nav-items li a:hover{
+    color: gold;
+
+}
+
+
+nav .logo{
     cursor: pointer;
     letter-spacing: 3px;
     color: rgb(248, 237, 138);
     font-size: 30px;
     font-weight: 800;
-}
-
-.nav-items{
-    display: flex;
-    gap: 10px;
-
-}
-
-.nav-items li{
-    list-style: none;
-    margin: 0 15px;
-}
-
-.nav-items li a{
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 20px;
-    color: rgb(192, 191, 180);
-    transition: .3s ease-in;
-}
-
-.nav-items li a:hover{
-    color: gold;
-    font-size: 22px;
-
-}
-
-
-.links a{
-    font-size: 20px;
-    color: gray;
-    margin: 20px 10px;
-}
-
-.links a:hover{
-    font-size: 27px;
-    color: aliceblue;
-    text-shadow: 2px 2px 6px gold;
-}
-
-.links{
-    position: sticky;
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
-
+    margin-left: 80px;
+    
 }
 
 
@@ -145,11 +124,11 @@ p{
 }
 
 .btns button{
-    margin-top: 40px;
-    margin-left: 30%;
-    padding: 10px 20px; /* Increase padding for a bigger button */
-    font-size: 16px; /* Increase font size */
-    font-weight: bold; /* Make text bold */
+    margin-top: 10px;
+    margin-left: 15px;
+    padding: 10px 20px;
+    font-size: 16px; 
+    font-weight: bold; 
     background-color: rgb(143, 142, 137);
     color: black;
     border: none;
@@ -159,17 +138,21 @@ p{
 .btns button a{
     color: rgb(8, 8, 8);
     text-decoration: none;
+    padding: 0;
 }
 
 .btns button:hover {
-    background-color: darkgoldenrod; /* Change background color on hover */
-    color: white; /* Change text color on hover */
+    background-color: darkgoldenrod; 
+    color: white;
+}
+.btns button a:hover{
+    color: azure;
 }
 
 .img-box{
     position: absolute;
-    right: 10%; /* Position the image on the right */
-    top: 50%; /* Adjust as needed */
+    right: 10%;
+    top: 50%; 
     transform: translateY(-50%);
     width: 400px;
     height: 400px;
